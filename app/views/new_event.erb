@@ -1,0 +1,25 @@
+<!-- Can't use form_for in sinatra... -->
+<!-- # <% if @event %>
+#   <% form_for(@event) do |f| %>
+#     <%= f.label :title %>:
+#     <%= f.text_field :title %><br />
+#   <% end %>
+# <% else %>
+#   no @event
+# <% end %> -->
+
+<form id='create_event' action='/events/create' method="post">
+  <input type="text" name='organizer_name' placeholder="organizer name" id="">
+  <br>
+  <input type="text" name='organizer_email' placeholder="organizer email">
+  <br>
+  <input type="text" name="title" placeholder="event title">
+  <br>
+  <input type="date" name="date" placeholder="date">
+  <br>
+  <input type="submit" placeholder="create">
+</form>
+
+
+<ol class='errors'>
+</ol>
