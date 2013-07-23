@@ -9,7 +9,7 @@ get '/events/:id/show' do |id|
 end
 
 get '/events/new' do
-  #TODO IMPLEMENT ME
+  p params[:errors]
 end
 
 post '/events/create' do
